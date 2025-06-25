@@ -108,6 +108,24 @@ Consider these exercises as a sandbox to practice **web-based HMI design**.
 
 Whether you're a web developer, roboticist, or learner following Deitel’s curriculum, contributions are welcome. See the [Contributing Guidelines](CONTRIBUTING.md) to get started.
 
+## 📚 Deitel Book Code (Submodule)
+
+This project includes selected code examples from the official [Deitel repository](https://github.com/pdeitel/InternetAndWorldWideWebHowToProgram5e) as a Git submodule.
+
+To keep things lightweight and avoid Windows long-path issues, we use a **sparse checkout** to include only:
+
+- Chapters 2 through 18
+- Chapter 29 (WebSocketChat app, source only)
+
+### 🔧 Setup Instructions
+
+After cloning the repo:
+
+```bash
+git submodule update --init --recursive
+bash scripts/setup_code_examples.sh
+```
+
 ---
 
 This is an independent learning initiative and is not affiliated with Deitel & Deitel. It aims to provide clear, documented solutions and explorations that can serve as both a study reference and a showcase of applied knowledge in robotics software and web development.
