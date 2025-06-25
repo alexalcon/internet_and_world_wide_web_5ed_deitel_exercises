@@ -1,0 +1,4 @@
+[submodule "code_examples"]
+	path = code_examples
+	url = https://github.com/pdeitel/InternetAndWorldWideWebHowToProgram5e
+	branch = master
