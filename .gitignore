@@ -1,0 +1,53 @@
+# === VSCode Editor ===
+.vscode/
+.code-workspace
+
+# === OS & IDE files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === HTML/CSS/JS Build Outputs ===
+*.log
+*.cache
+.cache/
+coverage/
+htmlcov/
+
+# === Web Dev Tools (optional) ===
+.sass-cache/
+*.sass-cache
+*.css.map
+*.js.map
+
+# === Personal or Auth Files ===
+*.pem
+*.key
+*.crt
+*.cfg
+*.ini
+*.db
+*.sqlite3
+*.bak
+*.swp
+secrets.*.json
+config.json
+
+# === Temporary Files ===
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.log
+*.lock
+~$*
+
+# === Git ===
+*.orig
+*.rej
+*.patch
+*.diff
+
+# === Markdown render cache ===
+*.md.html
