@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<!-- 
+          File: exercise_2_05_v1_0_0.html
+          Author: Alex Alcón
+          GitHub: https://github.com/alexalcon
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+          Description: ✰ Create a link to each of the following:
+              
+              				a) The file index.html, located in the files directory.
+              				b) The file index.html, located in the text subdirectory of the files 
+							   directory.
+              				c) The file index.html, located in the other directory in your parent 
+							   directory. [Hint: .. signifies parent directory.]
+              				d) The President’s e-mail address (president@whitehouse.gov).
+              				e) The file named README in the pub directory of ftp.cdrom.com. 
+							   [Hint: Use ftp://.]
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          Created on: 30-10-2025
+        -->
+        <title>Exercise 2.5 (Linking)</title>
+    </head>
+
+    <body>
+		<h1>Linking</h1>
+		<hr>
+
+		<!-- a) Link to index.html in files directory -->
+		<p><a href="./files/index.html">Link to index.html in <code>files</code> directory</a></p>
+		
+		<!-- b) Link to index.html in text subdirectory of files directory -->
+		<p><a href="./files/text/index.html">Link to index.html in <code>text</code> subdirectory</a></p>
+		
+		<!-- c) Link to index.html in the other directory in parent directory -->
+		<p>
+			<a href="../parent_other_directory/">Link to index.html in <code>other_directory</code> 
+			from parent directory</a>
+		</p>
+		
+		<!-- d) Link to President’s e-mail address -->
+		<p><a href="mailto:president@whitehouse.gov">E-mail the President</a></p>
+
+		<!-- e) Link to README file in pub directory using FTP -->
+		<p><a href="ftp://ftp.cdrom.com/pub/README">Link to README file in pub directory (FTP)</a></p>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- 
+          File: exercise_2_04_v1_0_0.html
+          Author: Alex Alcón
+          GitHub: https://github.com/alexalcon
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          Description: ✰ An image named deitel.png is 200 pixels wide and 150 pixels high. 
+                          Write an HTML5 statement using the width and height attributes of the 
+                          img element to perform each of the following transformations:
+                
+                                a) Increase the size of the image by 100 percent.
+                                b) Increase the size of the image by 50 percent.
+                                c) Change the width-to-height ratio to 2:1, keeping the width 
+                                   attained in part (a).
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          Created on: 30-10-2025
+        -->
+        <title>Exercise 2.4 (Images)</title>
+    </head>
+    
+    <body>
+        <!-- original image -->
+        <h1>Original image</h1>
+        <img src="./images/deitel.png" width="200" height="150" alt="Deitel Original Image 
+        (200 pixels wide and 150 pixels high)">
+        <hr>
+        
+        <!-- a) increase the size by 100% (200 × 2 = 400 width, 150 × 2 = 300 height) -->
+        <h1>a) Increase the size by 100%</h1>
+        <img src="./images/deitel.png" width="400" height="300" alt="Deitel Image 100% Increase">
+        <hr>
+        
+        <!-- b) increase the size by 50% (200 × 1.5 = 300 width, 150 × 1.5 = 225 height) -->
+        <h1>b) Increase the size by 50%</h1>
+        <img src="./images/deitel.png" width="300" height="225" alt="Deitel Image 50% Increase">
+        <hr>
+        
+        <!-- c) change ratio to 2:1 while keeping width from (a) → width = 400, height = 200 -->
+        <h1>c) Change ratio to 2:1 while keeping width from (a)</h1>
+        <img src="./images/deitel.png" width="200" height="100" alt="Deitel Image 2:1 Ratio">
+        <hr>
+    </body>
+</html>
