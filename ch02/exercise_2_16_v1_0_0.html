@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- 
+          File: exercise_2_16_v1_0_0.html
+          Author: Alex Alcón
+          GitHub: https://github.com/alexalcon
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          Description: ✰ A local university has asked you to create an HTML5 document that allows 
+                         prospective college students to provide feedback about their campus visit. 
+                         The form should contain text fields for name and e-mail, checkboxes for 
+                         what they liked most, radio buttons for how they became interested in the 
+                         college, a text area for additional comments, and submit/reset buttons. 
+                         The form should send the information using POST to http://www.deitel.com.
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          Created on: 04-11-2025
+        -->
+        <title>Exercise 2.16 (Form)</title>
+    </head>
+
+    <body>
+        <h1>Campus Visit Feedback Form</h1>
+
+        <!-- this tag starts the the form, gives the -->
+        <!-- method of sending information and the -->
+        <!-- location of the form-processing script -->
+        <form method="post" action="http://www.deitel.com">
+            <!-- name label input -->
+            <p>
+                <label for="name">
+                    <strong>Name:</strong>
+                    <input type="text" id="name" name="name" required>
+                </label>
+            </p>
+            
+            <!-- email label input -->
+            <p>
+                <label for="email">
+                    <strong>Email:</strong>
+                    <input type="email" id="email" name="email" size="25" required>
+                </label>
+            </p>
+
+            <!-- checkbox input types -->
+            <fieldset>
+                <legend><strong>What did you like most about the campus?</strong></legend>
+                <label><input type="checkbox" name="likes" value="campus">Campus</label><br>
+                <label><input type="checkbox" name="likes" value="students">Students</label><br>
+                <label><input type="checkbox" name="likes" value="location">Location</label><br>
+                <label><input type="checkbox" name="likes" value="atmosphere">Atmosphere</label><br>
+                <label><input type="checkbox" name="likes" value="dorms">Dorms</label><br>
+                <label><input type="checkbox" name="likes" value="sports">Sports</label><br>
+            </fieldset>
+            
+            <!-- radio buttons input types -->
+            <fieldset>
+                <legend><strong>How did you become interested in our college?</strong></legend>
+                <label><input type="radio" name="interest" value="friends">Friends</label>
+                <label><input type="radio" name="interest" value="television">Television</label>
+                <label><input type="radio" name="interest" value="internet">Internet</label>
+                <label><input type="radio" name="interest" value="other">Other</label>
+            </fieldset>
+
+            <!-- form additional comments section -->
+            <p>
+                <label for="comments">
+                    <strong>Additional Comments</strong>:
+                    <br>
+                    <textarea name="comments" id="comments" rows="5" cols="40"></textarea>
+                </label>
+            </p>
+
+            <!-- submit and reset buttons input types-->
+            <p>
+                <input type="submit" value="Submit Feedback">
+                <input type="reset" value="Reset Form">
+            </p>
+        </form>
+    </body>
+</html>
