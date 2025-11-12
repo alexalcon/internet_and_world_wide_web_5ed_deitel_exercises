@@ -54,3 +54,4 @@ config.json
 
 # === Ignore directories ===
 notes/*
+book_examples/*
